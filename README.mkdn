@@ -9,7 +9,7 @@ cd matrixx
 ```
 ### Initializing Repo
 ```
-repo init -u https://github.com/ProjectMatrixx/android.git -b 14.0 --git-lfs
+repo init --depth=1 -u https://github.com/RAKMOSOLUTIONS/matrixx-manifest.git -b 14.0 --git-lfs
 ```
 
 ### Now sync sources
@@ -20,6 +20,10 @@ repo sync -c --no-clone-bundle --optimized-fetch --prune --force-sync -j$(nproc 
 ### Now run
 ```
 . build/envsetup.sh
-lunch lineage_devicecodename-buildtype
+```
+```
+lunch lineage_ferrarri-user
+```
+```
 m bacon
 ```

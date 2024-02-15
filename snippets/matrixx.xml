@@ -25,6 +25,12 @@
            sync-j="4"
            revision="refs/heads/14.0" />
 
+  <remote  name="rakmo"
+           fetch="https://gitlab.com/" />
+
+  <remote  name="v4a"
+           fetch="https://github.com/" />
+
   <project path="android" name="android" remote="matrixx" />
 
   <project path="bootable/recovery" name="android_bootable_recovery" groups="pdk" remote="matrixx" />
@@ -69,5 +75,7 @@
   <project path="vendor/pixel-framework" name="android_vendor_pixel-framework" remote="matrixx" />
 
   <project path="vendor/certification" name="android_vendor_certification" remote="matrixx-gitlab" />
-  <project path="vendor/gapps" name="android_vendor_gapps" remote="bitbucket" />
+  <project path="vendor/gms" name="ram-unlok/android_vendor_gms" clone-depth="1" remote="rakmo" revision="14" />
+  <project path="vendor/bcr" name="ram-unlok/bcr" remote="rakmo" revision="main" />
+  <project path="packages/apps/ViPER4AndroidFX" name="TogoFire/packages_apps_ViPER4AndroidFX" remote="v4a" revision="v4a" />
 </manifest>
